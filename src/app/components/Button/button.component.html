@@ -1,0 +1,13 @@
+<button class="
+                px-5 py-2 mx-2 rounded-xl font-extrabold 
+                text-[1rem] text-center
+                text-black transition duration-250
+            " 
+        (click)="handleClick()"
+        [ngClass]="{
+            'bg-[#FBAE1D] hover:bg-[#fbcf1d]': variant == 'primary',
+            'hover:text-[#505050] cursor-pointer': variant == 'secondary'
+        }"
+    >
+    {{ text }}
+</button>
