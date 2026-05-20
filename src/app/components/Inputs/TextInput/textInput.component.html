@@ -1,0 +1,8 @@
+<input 
+    class="w-full rounded border-2 p-2"
+    [type]="type"
+    [value]="value"
+    (input)="handleInput($event)"
+    (blur)="onTouched()"
+    [placeholder]='placeholder'
+/>

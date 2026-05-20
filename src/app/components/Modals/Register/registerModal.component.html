@@ -1,0 +1,13 @@
+<base-modal modalTitle="Register" *ngIf="isOpen()">
+    <form [formGroup]="registerForm" (ngSubmit)="handleSubmit()" class="flex flex-col gap-5 w-full">
+        <text-input placeholder="Username" formControlName="username"/>
+        <text-input placeholder="Password" formControlName="password"/>
+        <text-input placeholder="Repeat Password" formControlName="repeat_password"/>
+        <text-input placeholder="Email" formControlName="email"/>
+
+        <div>
+            <app-button [text]="'Cancel'" [variant]="'secondary'" (onclick)="cancel()" type="button"></app-button>
+            <app-button [text]="'Register'" type="submit"></app-button>
+        </div>
+    </form>
+</base-modal>
