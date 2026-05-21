@@ -1,0 +1,10 @@
+<base-modal modalTitle="Login" *ngIf="isOpen()">
+    <form [formGroup]="loginForm" (ngSubmit)="handleSubmit()" class="flex flex-col gap-5 w-full">
+        <text-input placeholder="Email" formControlName="email"/>
+        <text-input placeholder="Password" formControlName="password"/>
+        <div>
+            <app-button [text]="'Cancel'" type="button" [variant]="'secondary'" (onClick)="cancel()"/>
+            <app-button [text]="'Login'" type="submit"/>
+        </div>
+    </form>
+</base-modal>
