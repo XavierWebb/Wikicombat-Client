@@ -18,7 +18,7 @@ export class RegisterModal{
 
     cancel(){
         this.registerForm.reset();
-        this.modalsStore.changeModalState("register");
+        this.modalsStore.changeModalState('register');
     }
     
     registerForm: FormGroup;
